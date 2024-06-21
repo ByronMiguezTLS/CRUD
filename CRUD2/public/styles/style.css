@@ -1,0 +1,141 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    border-bottom: 1px solid #D5D9D9;
+    padding: 0 20px;
+}
+
+.header a {
+    color: #00438D;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.header a:hover {
+    color: white;
+    background-color: #00438D;
+    border-radius: 5px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-top: 1px solid #D5D9D9;
+    background-color: #f8f9fa;
+    margin-top: 20px;
+}
+
+.social {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+/* Formulario y tabla */
+form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tablita {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla th,
+.tabla td {
+    border: 1px solid #D5D9D9;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabla th {
+    background-color: #00438D;
+    color: white;
+}
+
+.caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.caja label {
+    margin-right: 10px;
+}
+
+.caja input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #D5D9D9;
+}
+
+.submit {
+    width: 100px;
+    height: 40px;
+    background-color: #00438D;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #003366;
+}
+
+/* Estilos específicos para los íconos sociales en el footer */
+.footer .social {
+    background-size: cover;
+}
+
+.footer .social.footer-fb {
+    background-image: url('../images/facebook.png');
+}
+
+.footer .social.footer-twitter {
+    background-image: url('../images/twitter.png');
+}
+
+.footer .social.footer-instagram {
+    background-image: url('../images/instagram.png');
+}
+
+.footer .social.footer-github {
+    background-image: url('../images/github.png');
+}
+
+.footer .social.footer-linkedin {
+    background-image: url('../images/linkedin.png');
+}
