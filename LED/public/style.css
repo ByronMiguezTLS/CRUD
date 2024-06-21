@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+
+.section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h3 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.vivo {
+    background-color: #4caf50;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.pollo {
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.huevo {
+    background-color: #fdd835;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+}
+
+input[type="color"] {
+    display: none;
+}
+
+#colorDisplay {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    display: inline-block;
+    justify-content: center;
+}
+
+output {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}

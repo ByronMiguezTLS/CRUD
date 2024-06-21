@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control de KMtronic</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .btn-toggle-on {
+      background-color: #28a745 !important; 
+      border-color: #28a745 !important;
+    }
+    .btn-toggle-off {
+      background-color: #dc3545 !important;
+      border-color: #dc3545 !important;
+    }
+    .btn-spacing {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="mb-4">Control de KMtronic</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <!-- Botones individuales -->
+        <div class="botonesNormales">
+          <button class="btn btn-block btn-lg toggle-btn btn-toggle-off btn-spacing" data-command-on="FF0101" data-command-off="FF0100">Relay 1 OFF</button>
+          <button class="btn btn-block btn-lg toggle-btn btn-toggle-off btn-spacing" data-command-on="FF0201" data-command-off="FF0200">Relay 2 OFF</button>
+          <button class="btn btn-block btn-lg toggle-btn btn-toggle-off btn-spacing" data-command-on="FF0301" data-command-off="FF0300">Relay 3 OFF</button>
+          <button class="btn btn-block btn-lg toggle-btn btn-toggle-off btn-spacing" data-command-on="FF0401" data-command-off="FF0400">Relay 4 OFF</button>
+          <button class="btn btn-block btn-lg toggle-btn btn-toggle-off btn-spacing" data-command-on="FF0501" data-command-off="FF0500">Relay 5 OFF</button>
+          <button class="btn btn-block btn-lg toggle-btn btn-toggle-off btn-spacing" data-command-on="FF0601" data-command-off="FF0600">Relay 6 OFF</button>
+          <button class="btn btn-block btn-lg toggle-btn btn-toggle-off btn-spacing" data-command-on="FF0701" data-command-off="FF0700">Relay 7 OFF</button>
+          <button class="btn btn-block btn-lg toggle-btn btn-toggle-off btn-spacing" data-command-on="FF0801" data-command-off="FF0800">Relay 8 OFF</button>
+        </div>
+
+        <!-- Boton ALL -->
+        <button class="btn btn-block btn-lg toggle-btn btn-toggle-off btn-spacing" id="relayAll" data-command-on="FFE0FF" data-command-off="FFE000">ENCENDER TODO</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="udp.js"></script>
+</body>
+</html>
