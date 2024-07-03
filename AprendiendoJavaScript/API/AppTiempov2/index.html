@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Introduce el nombre de una ciudad" spellcheck="false">
+            <button><img src="images/search.png" alt="search"></button>
+        </div>
+        <div class="error">
+            <p>La ciudad no es valida</p>
+        </div>
+        <div class="weather">
+            <img src="images/rain.png" alt="foto del tiempo" class="weather-icon">
+            <h1 class="temp">22°c</h1>
+            <h2 class="city">Donostia</h2>
+            <div class="details">
+                <div class="col" id="humedad">
+                    <img src="images/humidity.png" alt="humedad">
+                    <div >
+                        <p class="humidity">50%</p>
+                        <p>Humedad</p>
+                    </div>
+                </div>
+                <div class="col" id="viento">
+                    <img src="images/wind.png" alt="viento">
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Viento</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
