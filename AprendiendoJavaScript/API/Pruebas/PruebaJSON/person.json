@@ -1,0 +1,8 @@
+{
+    "name": "Byron",
+    "age": 20,
+    "gender": "Hombre",
+    "language": "Castellano",
+    "isEmployed": true,
+    "hobbies": ["Gimnasio", "Videojuegos", "comer"]
+}

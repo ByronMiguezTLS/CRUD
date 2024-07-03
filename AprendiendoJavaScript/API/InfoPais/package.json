@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@google-cloud/translate": "^8.3.0",
+    "i18next": "^23.11.5",
+    "i18next-http-backend": "^2.5.2"
+  }
+}

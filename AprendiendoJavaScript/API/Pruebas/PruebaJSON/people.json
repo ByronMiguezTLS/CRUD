@@ -1,0 +1,35 @@
+[{
+    "name": "Byron",
+    "age": 20,
+    "gender": "Hombre",
+    "language": "Castellano",
+    "isEmployed": true
+},
+{
+    "name": "Saioa",
+    "age": 20,
+    "gender": "Mujer",
+    "language": "Castellano",
+    "isEmployed": false
+},
+{
+    "name": "Beñat",
+    "age": 19,
+    "gender": "Hombre",
+    "language": "Castellano",
+    "isEmployed": true
+},
+{
+    "name": "Lorena",
+    "age": 19,
+    "gender": "Mujer",
+    "language": "Castellano",
+    "isEmployed": false
+},
+{
+    "name": "Tigris",
+    "age": 5,
+    "gender": "Mujer",
+    "language": "Gatuno",
+    "isEmployed": false
+}]
