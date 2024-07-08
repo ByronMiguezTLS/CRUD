@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <title>Telesonic</title>
+    <style>
+        .btn-action {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 0 4px;
+            color: #ffffff;
+            text-decoration: none;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn-edit {
+            background-color: #4CAF50;
+        }
+
+        .btn-edit:hover {
+            background-color: #45a049;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-delete {
+            background-color: #f44336;
+        }
+
+        .btn-delete:hover {
+            background-color: #e53935;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-add {
+            background-color: #0096a9;
+            margin-top: 20px;
+        }
+
+        .btn-add:hover {
+            background-color: #007a87;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+    </style>
+</head>
+<body class="text-center">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index" class="navbar-brand" id="telesonic">
+                <img src="/resources/images/telesonic.png" alt="Telesonic Logo" id="telesonic-logo">
+            </a>
+            <div class="navbar-links">
+                <% if (login) { %>
+                    <span class="navbar-user">Usuario: <strong><%= name %></strong></span>
+                    <a href="almacen" class="navbar-link">Almacen</a>
+                    <a href="logout" class="navbar-link">Cerrar sesión</a>
+                <% } else { %>
+                    <a href="register" class="navbar-link">Registrarse</a>
+                <% } %>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Materiales</h2>
+        <main class="content px-3 py-2">
+            <div class="container-fluid">
+                <div class="card-body">
+                    <button class="btn-action btn-add" onclick="openModal('add')">Añadir</button>
+                    <div class="table-responsive">
+                        <table class="custom-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Marca</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Modelo</th>
+                                    <th scope="col">Descripción</th>
+                                    <th scope="col">Número de serie</th>
+                                    <th scope="col">Contenido</th>
+                                    <th scope="col">Disponible</th>
+                                    <th scope="col">Foto</th>
+                                    <th scope="col">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Aquí irán los datos -->
+                                <tr>
+                                    <td>Apple</td>
+                                    <td>iPhone</td>
+                                    <td>12</td>
+                                    <td>Smartphone de Apple</td>
+                                    <td>ABC123</td>
+                                    <td>Contenido del iPhone 12</td>
+                                    <td>Sí</td>
+                                    <td><img src="resources/images/iphone.png" alt="iPhone" style="width: 50px;"></td>
+                                    <td>
+                                        <button class="btn-action btn-edit" onclick="openModal('edit')">Editar</button>
+                                        <button class="btn-action btn-delete" onclick="openModal('delete')">Eliminar</button>
+                                    </td>
+                                </tr>
+                                <!-- Más filas -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalHeader" class="modal-header">
+                <h2>Modal Header</h2>
+            </div>
+            <div id="modalBody" class="modal-body">
+                <p>Some text in the Modal Body</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-action btn-save">Guardar</button>
+                <button class="btn-action btn-cancel" onclick="closeModal()">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <script src="resources/js/modal.js"></script>
+</body>
+</html>

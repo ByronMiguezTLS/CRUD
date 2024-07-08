@@ -10,20 +10,18 @@
   <body class="text-center">
     <nav class="navbar">
       <div class="navbar-container">
-        <a href="/" class="navbar-brand">Telesonic</a>
+        <a href="index" class="navbar-brand" id="telesonic">
+          <img src="/resources/images/telesonic.png" alt="Telesonic Logo" id="telesonic-logo">
+        </a>
         <div class="navbar-links">
           <% if (login) { %>
             <span class="navbar-user">Usuario: <strong><%= name %></strong></span>
-            <a href="logout" class="navbar-link">Logout</a>
             <a href="almacen" class="navbar-link">Almacen</a>
+            <a href="logout" class="navbar-link">Cerrar sesion</a>
           <% } else { %>
             <a href="register" class="navbar-link">Registrarse</a>
-          <% } if (login) { %>
-            <span class="navbar-user">Usuario: <strong><%= name %></strong></span>
-            <a href="logout" class="navbar-link">Logout</a>
-            <a href="almacen" class="navbar-link">Almacen</a>
-          <% }
-          %>
+          <% } %>
+            
         </div>
       </div>
     </nav>
@@ -31,10 +29,10 @@
       <h1>Página de Inicio</h1>
       <% if (login) { %>
         <h1>Usuario conectado: <strong><%= name %></strong></h1>
-        <a href="logout" class="a-logout">Logout</a>
-      <%}  { %>
+        <a href="logout" class="a-logout">Cerrar sesion</a>
+      <%} else { %>
         <h1>Bienvenido, visitante</h1>
-        <a href="login" class="a-login">Ir a Login</a>
+        <a href="login" class="a-login">Iniciar sesion</a>
       <% } %>
     </div>
   </body>

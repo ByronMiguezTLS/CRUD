@@ -10,18 +10,20 @@
 <body>
     <nav class="navbar">
         <div class="navbar-container">
-          <a href="/" class="navbar-brand">Telesonic</a>
+          <a href="/" class="navbar-brand" id="telesonic">
+            <img src="/resources/images/telesonic.png" alt="Telesonic Logo" id="telesonic-logo">
+          </a>
           <div class="navbar-links">
               <a href="register" class="navbar-link">Registrarse</a>
           </div>
         </div>
       </nav>
   <div class="login-form">
-    <h1>Login con Node Js</h1>
+    <h1>Inicio de sesion</h1>
     <form action="auth" method="POST">
-      <input type="text" name="user" placeholder="User" autofocus required>
-      <input type="password" name="pass" placeholder="Password" required>
-      <input type="submit" class="btn-login" value="Login">
+      <input type="text" name="user" placeholder="Usuario" autofocus required>
+      <input type="password" name="pass" placeholder="Contraseña" required>
+      <input type="submit" class="btn-login" value="Iniciar sesion">
     </form>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <% if (typeof alert != "undefined") { %>
