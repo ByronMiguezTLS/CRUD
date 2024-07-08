@@ -12,7 +12,7 @@ function verificarToken(token) {
 
 const chequearToken = {
     confirmarToken: function(req){
-        const decodificado = decodificarCabecera(req.params.cabecera);
+        const decoficado = decodificarCabecera(req.params.cabecera);
     }
 }
 
@@ -21,16 +21,16 @@ function obtenerToken(autorizacion) {
         throw new Error('No hay token');
     }
 
-    if(autorizacion.indexOf('Bearer ') === -1) {
-        throw new Error('Token no válido');
+    if(autorizacion.indexOf('Bearer') === -1) {
+        throw new Error('Formato invalido');
     }
 
-    let token = autorizacion.replace('Bearer ', '');
+    let token = autorizacion.replace('Bearer', '');
     return token;
 }
 
 function decodificarCabecera(req) { 
-    const autorizacion = req.headers.authorization || '';
+    const autorizacion = req.headers.autorization || '';
     const token = obtenerToken(autorizacion);
     const decodificado = verificarToken(token);
 
@@ -43,4 +43,3 @@ module.exports ={
     asignarToken,
     chequearToken  
 }
-//jhk

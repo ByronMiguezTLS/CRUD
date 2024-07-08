@@ -1,0 +1,26 @@
+<div class="flex items-center justify-center min-h-screen bg-gray-200">
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-sm">
+        <h1 class="text-2xl font-bold text-gray-700 mb-6">Inicio de Sesión</h1>
+        <!-- Mensaje de error (opcional) -->
+        {{#if error}}
+        <p class="text-red-500 mb-4">{{error}}</p>
+        {{/if}}
+        <form action="/auth" method="post">
+            <div class="mb-4">
+                <label for="name" class="flex items-center text-gray-600">
+                    <i class="fas fa-user mr-2 text-blue-500"></i>
+                    <span class="sr-only">Nombre</span>
+                </label>
+                <input type="text" name="name" placeholder="Nombre" id="name" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            </div>
+            <div class="mb-6">
+                <label for="password" class="flex items-center text-gray-600">
+                    <i class="fas fa-lock mr-2 text-blue-500"></i>
+                    <span class="sr-only">Contraseña</span>
+                </label>
+                <input type="password" name="password" placeholder="Contraseña" id="password" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+            </div>
+            <button type="submit" class="w-full py-3 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-200">Iniciar Sesión</button>
+        </form>
+    </div>
+</div>

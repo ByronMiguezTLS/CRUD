@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <title>Telesonic</title>
+  </head>
+  <body class="text-center">
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="/" class="navbar-brand">Telesonic</a>
+        <div class="navbar-links">
+          <% if (login) { %>
+            <span class="navbar-user">Usuario: <strong><%= name %></strong></span>
+            <a href="logout" class="navbar-link">Logout</a>
+            <a href="almacen" class="navbar-link">Almacen</a>
+          <% } else { %>
+            <a href="register" class="navbar-link">Registrarse</a>
+          <% } if (login) { %>
+            <span class="navbar-user">Usuario: <strong><%= name %></strong></span>
+            <a href="logout" class="navbar-link">Logout</a>
+            <a href="almacen" class="navbar-link">Almacen</a>
+          <% }
+          %>
+        </div>
+      </div>
+    </nav>
+    <div class="contenedor">
+      <h1>Página de Inicio</h1>
+      <% if (login) { %>
+        <h1>Usuario conectado: <strong><%= name %></strong></h1>
+        <a href="logout" class="a-logout">Logout</a>
+      <%}  { %>
+        <h1>Bienvenido, visitante</h1>
+        <a href="login" class="a-login">Ir a Login</a>
+      <% } %>
+    </div>
+  </body>
+</html>

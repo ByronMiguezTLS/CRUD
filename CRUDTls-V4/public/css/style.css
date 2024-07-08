@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #0096a9;
+    padding: 15px;
+    color: white;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-link {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .navbar-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contenedor */
+  .contenedor {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .contenedor h1 {
+    color: #0096a9;
+    font-size: 28px;
+    padding: 20px 0;
+    border-bottom: 2px solid #0096a9;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  /* Formulario */
+  .login-form,
+  .register-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  }
+  
+  .login-form h1,
+  .register-form h1 {
+    text-align: center;
+    color: #0096a9;
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  
+  /* Elementos del Formulario */
+  .login-form input[type="text"],
+  .login-form input[type="password"],
+  .register-form input[type="text"],
+  .register-form input[type="password"],
+  .register-form select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* Estilos de botones */
+  .btn-login,
+  .btn-register,
+  .btn-save,
+  .btn-cancel
+   {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .btn-login {
+    background-color: #0096a9;
+  }
+  
+  .btn-login:hover,
+  .btn-login:active {
+    background-color: #007a87;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn-register {
+    background-color: #0096a9;
+    margin-top: 20px;
+  }
+  
+  .btn-register:hover,
+  .btn-register:active {
+    background-color: #007a87;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn-save {
+    background-color: #0096a9;
+  }
+  
+  .btn-save:hover,
+  .btn-save:active {
+    background-color: #007a87;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn-cancel {
+    display: flex;
+    justify-content: center;
+    background-color: #9CA3AF;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .btn-cancel:hover,
+  .btn-cancel:active {
+    background-color: #6B7280;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilos de enlaces */
+  .a-login,
+  .a-logout {
+    background-color: white;
+    color: #0096a9;
+    border: 2px solid #0096a9;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .a-login:hover,
+  .a-login:active,
+  .a-logout:hover,
+  .a-logout:active {
+    background-color: #0096a9;
+    color: white;
+  }
+  
